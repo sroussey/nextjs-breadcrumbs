@@ -201,15 +201,13 @@ const Breadcrumbs = ({
       >
         {!omitRootLabel && (
           <li style={inactiveItemStyle} className={inactiveItemClassName}>
-            <Link href="/" legacyBehavior>
-              <a>
-                {convertBreadcrumb(
-                  rootLabel || 'Home',
-                  labelsToUppercase,
-                  replaceCharacterList,
-                  transformLabel
-                )}
-              </a>
+            <Link href="/">
+              {convertBreadcrumb(
+                rootLabel || 'Home',
+                labelsToUppercase,
+                replaceCharacterList,
+                transformLabel
+              )}
             </Link>
           </li>
         )}
@@ -236,15 +234,13 @@ const Breadcrumbs = ({
                     : inactiveItemStyle
                 }
               >
-                <Link href={breadcrumb.href} legacyBehavior>
-                  <a>
-                    {convertBreadcrumb(
-                      breadcrumb.breadcrumb,
-                      labelsToUppercase,
-                      replaceCharacterList,
-                      transformLabel
-                    )}
-                  </a>
+                <Link href={breadcrumb.href}>
+                  {convertBreadcrumb(
+                    breadcrumb.breadcrumb,
+                    labelsToUppercase,
+                    replaceCharacterList,
+                    transformLabel
+                  )}
                 </Link>
               </li>
             );
