@@ -45,8 +45,10 @@ const convertBreadcrumb = (
     }
   }
 
-  // decode for utf-8 characters and return ascii. 
-  return toUpperCase ? decodeURI(transformedTitle).toUpperCase() : decodeURI(transformedTitle);
+  // decode for utf-8 characters and return ascii.
+  return toUpperCase
+    ? decodeURI(transformedTitle).toUpperCase()
+    : decodeURI(transformedTitle);
 };
 
 export interface Breadcrumb {
@@ -199,7 +201,7 @@ const Breadcrumbs = ({
       >
         {!omitRootLabel && (
           <li style={inactiveItemStyle} className={inactiveItemClassName}>
-            <Link href="/">
+            <Link href="/" legacyBehavior>
               <a>
                 {convertBreadcrumb(
                   rootLabel || 'Home',
@@ -234,7 +236,7 @@ const Breadcrumbs = ({
                     : inactiveItemStyle
                 }
               >
-                <Link href={breadcrumb.href}>
+                <Link href={breadcrumb.href} legacyBehavior>
                   <a>
                     {convertBreadcrumb(
                       breadcrumb.breadcrumb,
