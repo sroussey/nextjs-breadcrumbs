@@ -17,7 +17,7 @@
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "link:../node_modules/react-scripts",
     "typescript": "link:../node_modules/typescript",
-    "nextjs-breadcrumbs": "link:..",
+    "@sroussey/nextjs-breadcrumbs": "link:..",
     "next": "^11.0.1"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import Breadcrumbs from 'nextjs-breadcrumbs'
+import Breadcrumbs from '@sroussey/nextjs-breadcrumbs';
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       useDefaultStyle={true}
       transformLabel={(title) => title + ' Custom Label'}
     />
-  )
-}
+  );
+};
 
-export default App
+export default App;

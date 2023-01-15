@@ -1,5 +1,5 @@
 import React from 'react';
-import 'nextjs-breadcrumbs/dist/index.css';
+import '@sroussey/nextjs-breadcrumbs/dist/index.css';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
